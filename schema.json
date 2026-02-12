@@ -1,1 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Biblioteca Bot API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/webhook": {
+      "post": {
+        "summary": "Webhook for Tawk.to",
+        "operationId": "webhook",
+        "responses": {
+          "200": {
+            "description": "Successful Webhook",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Mensagem processada com sucesso"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
